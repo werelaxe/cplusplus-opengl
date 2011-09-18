@@ -7,7 +7,7 @@ void Draw()
 	glBegin(GL_POINTS);
 		glVertex2f(0.0, 0.0);
 	glEnd();
-	glFlush();//только для GLUT_SINGLE
+	glFlush();//С‚РѕР»СЊРєРѕ РґР»СЏ GLUT_SINGLE
 }
 
 void Initialize()
@@ -20,14 +20,14 @@ void Initialize()
 
 int main(int argc, char** argv)
 {
-	//Инициализация
+	//РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
 	glutInitWindowSize(400, 400);
 	glutInitWindowPosition(100, 200);
 	glutCreateWindow("Lesson 01");
-	//Регистрация
-	glutDisplayFunc(Draw);//Рисование
+	//Р РµРіРёСЃС‚СЂР°С†РёСЏ
+	glutDisplayFunc(Draw);//Р РёСЃРѕРІР°РЅРёРµ
 	Initialize();
 	glutMainLoop();
 	return 0;
