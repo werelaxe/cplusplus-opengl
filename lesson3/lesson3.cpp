@@ -1,4 +1,4 @@
-#include<gl\glut.h>
+#include<gl/glut.h>
 #include<math.h>
 #include<stdlib.h>
 
@@ -38,7 +38,6 @@ void Timer(int value)
 	case 1: glColor3f(1.0, 0.0, 0.0);
 		break;
 	}
-	glColor3f(1.0, 1.0, 1.0);
 	++Angle;
 	//Draw();
 	glutPostRedisplay();
@@ -69,7 +68,7 @@ int main(int argc, char** argv)
 	glutInitWindowPosition(100, 200);
 	glutCreateWindow("Lesson 03");
 	glutDisplayFunc(Draw);
-	glutTimerFunc(50, Timer, 0);
+	glutTimerFunc(50, Timer, 0);//Анимация
 	glutTimerFunc(1000, Timer2, 0);
 	Initialize();
 	glutMainLoop();
