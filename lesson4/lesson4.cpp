@@ -76,8 +76,8 @@ int main(int argc, char** argv)
 	glutCreateWindow("Lesson 04");
 	glutDisplayFunc(Draw);
 	glutTimerFunc(50, Timer, 0);
-	glutKeyboardFunc(Keyboard);
-	glutSpecialFunc(SKeyboard);
+	glutKeyboardFunc(Keyboard);//Клавиатура (буквы, цифры, табуляция, пробел, <Enter>(ввод) и т. д.)
+	glutSpecialFunc(SKeyboard);//Клавиатура (<f1>-<f12>, <Insert>, <Home>, <End>, <PgUp>, <PgDn>)
 	Initialize();
 	glutMainLoop();
 	return 0;
