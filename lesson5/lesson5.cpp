@@ -1,5 +1,5 @@
-#pragma warning(disable: 4996)
-#include<gl\glut.h>
+#pragma warning(disable: 4996)//Не обязательно
+#include<gl/glut.h>
 #include<math.h>
 #include<string>
 #include<stdlib.h>
@@ -33,7 +33,7 @@ void Draw()
 		}
 	glEnd();
 	strcpy(ang, res);
-	glutSetWindowTitle(strcat(ang, itoa(Angle, buf, 10)));
+	glutSetWindowTitle(strcat(ang, itoa(Angle, buf, 10)));//изменение заголовка окна
 	glPopMatrix();
 	glutSwapBuffers();
 	//strcat
