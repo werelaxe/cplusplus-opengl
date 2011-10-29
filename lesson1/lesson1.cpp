@@ -1,4 +1,4 @@
-#include<gl\glut.h>
+#include<gl/glut.h>
 
 void Draw()
 {
