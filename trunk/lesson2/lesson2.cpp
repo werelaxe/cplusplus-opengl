@@ -1,7 +1,7 @@
-#include <gl\glut.h>
+#include <gl/glut.h>
 
-float WinWid=400.0;//Ширина окна
-float WinHei=400.0;//Высота окна
+float WinWid=400.0;//РЁРёСЂРёРЅР° РѕРєРЅР°
+float WinHei=400.0;//Р’С‹СЃРѕС‚Р° РѕРєРЅР°
 
 void Draw()
 {
@@ -29,9 +29,9 @@ void Initialize()
 	glLoadIdentity();
 	glOrtho(-WinWid/2, WinWid/2, -WinHei/2, WinHei/2, -200.0, 200.0);
 	glMatrixMode(GL_MODELVIEW);
-	//glTranslatef(50.0, 0.0, 0.0);//Перемещение
-	glScalef(0.9, 0.9, 1.0);//Масштабирование
-	glRotatef(15, 2.0, 0.0, -1.0);//Вращение
+	//glTranslatef(50.0, 0.0, 0.0);//РџРµСЂРµРјРµС‰РµРЅРёРµ
+	glScalef(0.9, 0.9, 1.0);//РњР°СЃС€С‚Р°Р±РёСЂРѕРІР°РЅРёРµ
+	glRotatef(15, 2.0, 0.0, -1.0);//Р’СЂР°С‰РµРЅРёРµ
 }
 
 int main(int argc, char** argv)
