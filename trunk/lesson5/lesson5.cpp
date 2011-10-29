@@ -1,5 +1,5 @@
 #pragma warning(disable: 4996)
-#include<gl\glut.h>
+#include<gl/glut.h>
 #include<math.h>
 #include<string>
 #include<stdlib.h>
@@ -86,7 +86,7 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGB);
 	glutInitWindowSize(WinWid, WinHei);
 	glutInitWindowPosition(100, 200);
-	glutCreateWindow("Lesson 04");
+	glutCreateWindow("Lesson 05");
 	glutDisplayFunc(Draw);
 	glutTimerFunc(50, Timer, 0);
 	glutKeyboardFunc(Keyboard);
